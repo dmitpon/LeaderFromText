@@ -76,5 +76,8 @@ LeaderFromText.prototype.beginEvent = function () {
 
     di.applyOperation(op);
     EAction.handleUserMessage(qsTr("LeaderFromText was created successfully"));
+    
+    // toggle icon in gray state
+    this.getGuiAction().setChecked(false);
     this.terminate();
 };
